@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Body.css'
 import Card from '../Card/Card';
 import Bookmarked from '../Bookmarked/Bookmarked';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Body = () => {
     
@@ -22,11 +24,18 @@ const Body = () => {
     }
 
     const handleBookmarked = (blogTitle) =>{
+        setTitle(blogTitle);
         const newTitle = [...title,blogTitle]
-        setTitle(newTitle)
+        setTitle(newTitle);
+        const tostData = title.find(pd => pd === blogTitle);
+        if (tostData) {
+            toast("You have already bookmarked this")
+        }
+        else{
+            const newTitle = [...title,blogTitle];
+            setTitle(newTitle);
+        }
     }
-
-
 
 
     return (
@@ -42,7 +51,7 @@ const Body = () => {
                 }
             </div>
 
-            <div>
+            <div className='bookmark-container'>
                 <Bookmarked
                 time={time}
                 title={title}
