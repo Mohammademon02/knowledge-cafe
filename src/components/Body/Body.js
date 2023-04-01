@@ -13,6 +13,11 @@ const Body = () => {
         .then(data => setCards(data))
      } , [])
 
+    
+    const handleMarkAsRead = () => {
+       
+    }
+
     return (
         <div className='main-container'>
             <div className='cards-container'>
@@ -20,6 +25,7 @@ const Body = () => {
                     cards.map(card => <Card
                     card={card}
                     key={card.id}
+                    handleMarkAsRead={handleMarkAsRead}
                     ></Card>)
                 }
             </div>

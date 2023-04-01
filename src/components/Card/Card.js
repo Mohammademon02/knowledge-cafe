@@ -1,8 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import './Card.css'
 
 const Card = (props) => {
     const { authorImage, authorName, blogTitle, image, readTime, publishDate  } = props.card;
+    const handleMarkAsRead = props.handleMarkAsRead;
+    
     return (
         <div>
            <div className='card-container'>
@@ -15,10 +19,12 @@ const Card = (props) => {
                         <p>{publishDate}</p>
                     </div>
                 </div>
-                <p>{readTime}</p>
+                <div>
+                        <p>{readTime} <span className='bookmark-btn' ><FontAwesomeIcon icon={faBookmark} /></span> </p>
+                </div>
             </div>
             <h2 className='blog-title'>{blogTitle}</h2>
-            <a href="">Mark as read</a>
+            <p onClick={ () => handleMarkAsRead()} className='mark-btn' >Mark as read</p>
            </div>
         </div>
     );

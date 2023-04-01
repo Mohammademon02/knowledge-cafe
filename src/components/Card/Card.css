@@ -43,6 +43,19 @@
     margin-top: 0;
 }
 
+.bookmark-btn{
+    cursor: pointer;
+}
+
 .blog-title{
     font-size: 30px;
 }
+
+.mark-btn{
+    color: rgba(96, 71, 236, 1);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(96, 71, 236, 1);
+    cursor: pointer;
+    }

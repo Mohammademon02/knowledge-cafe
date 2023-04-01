@@ -7,8 +7,8 @@ const Bookmarked = () => {
             <div className='read-time'>
                 <p>Spent time on read : 0 min</p>
             </div>
-            <div>
-                
+            <div className='bookmarked-blogs'>
+                 
             </div>
         </div>
     );
