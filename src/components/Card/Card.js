@@ -6,6 +6,8 @@ import './Card.css'
 const Card = (props) => {
     const { authorImage, authorName, blogTitle, image, readTime, publishDate  } = props.card;
     const handleMarkAsRead = props.handleMarkAsRead;
+    const handleBookmarked = props.handleBookmarked
+
     
     return (
         <div>
@@ -20,11 +22,11 @@ const Card = (props) => {
                     </div>
                 </div>
                 <div>
-                        <p>{readTime} <span className='bookmark-btn' ><FontAwesomeIcon icon={faBookmark} /></span> </p>
+                        <p>{readTime} min read <span onClick={ ()=> handleBookmarked(blogTitle) } className='bookmark-btn' ><FontAwesomeIcon icon={faBookmark} /></span> </p>
                 </div>
             </div>
             <h2 className='blog-title'>{blogTitle}</h2>
-            <p onClick={ () => handleMarkAsRead()} className='mark-btn' >Mark as read</p>
+            <p onClick={ () => handleMarkAsRead(readTime)} className='mark-btn' >Mark as read</p>
            </div>
         </div>
     );

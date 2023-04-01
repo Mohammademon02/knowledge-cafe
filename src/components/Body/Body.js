@@ -5,7 +5,9 @@ import Bookmarked from '../Bookmarked/Bookmarked';
 
 const Body = () => {
     
-     const [cards, setCards] = useState([]);
+     const [cards, setCards] = useState([])
+     const [time, setTime] = useState([0])
+     const [title, setTitle] = useState([])
 
      useEffect( () =>{
         fetch('fakedb.json')
@@ -14,9 +16,18 @@ const Body = () => {
      } , [])
 
     
-    const handleMarkAsRead = () => {
-       
+    const handleMarkAsRead = (readTime) => {
+        const newTime = parseFloat(time + readTime);
+       setTime(newTime);
     }
+
+    const handleBookmarked = (blogTitle) =>{
+        const newTitle = [...title,blogTitle]
+        setTitle(newTitle)
+    }
+
+
+
 
     return (
         <div className='main-container'>
@@ -26,12 +37,16 @@ const Body = () => {
                     card={card}
                     key={card.id}
                     handleMarkAsRead={handleMarkAsRead}
+                    handleBookmarked={handleBookmarked}
                     ></Card>)
                 }
             </div>
 
-            <div className='bookmarked-container'>
-                <Bookmarked></Bookmarked>
+            <div>
+                <Bookmarked
+                time={time}
+                title={title}
+                ></Bookmarked>
             </div>
         </div>
     );
