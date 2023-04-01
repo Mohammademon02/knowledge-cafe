@@ -1,14 +1,14 @@
 
 
 .header-container{
-    margin: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 150px;
 }
 
 .nav-btn{
     text-decoration: none;
-    margin-right: 10px;
     font-size: 16px;
+    margin-right: 25px;
 }
