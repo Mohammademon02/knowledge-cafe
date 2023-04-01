@@ -6,7 +6,7 @@
     "blogTitle": "How to get your first job as a self-taught programmer",
     "authorImage": "https://i.ibb.co/JRzL8GT/person1.png",
     "blogCover": "https://i.ibb.co/W34c1dw/blog1.png",
-    "raatTime": "05 min read",
+    "readTime": "05 min read",
     "publishDate": "Mar 05 (25 Days ago)"
   },
   {
@@ -16,7 +16,7 @@
     "blogTitle": "How to get your first job as a self-taught programmer",
     "authorImage": "https://i.ibb.co/0J1Mrs0/person2.png",
     "blogCover": "https://i.ibb.co/y4Y8hBJ/blog2.png",
-    "raatTime": "06 min read",
+    "readTime": "06 min read",
     "publishDate": "Mar 10 (20 Days ago)"
   },
   {
@@ -26,17 +26,17 @@
     "blogTitle": "How to get your first job as a self-taught programmer",
     "authorImage": "https://i.ibb.co/jHZjNTd/person3.png",
     "blogCover": "https://i.ibb.co/xsmB1M0/blog3.png",
-    "raatTime": "07 min read",
+    "readTime": "07 min read",
     "publishDate": "Mar 17 (13 Days ago)"
   },
   {
     "id": "4",
-    "image": "https://i.ibb.co/qk2qhz0/blog4.jpg",
+    "image": "https://i.ibb.co/y4Y8hBJ/blog2.png",
     "authorName": "Mrs. Mina",
     "blogTitle": "How to get your first job as a self-taught programmer",
     "authorImage": "https://i.ibb.co/LRMmyfJ/person4.pngs",
     "blogCover": "https://i.ibb.co/qk2qhz0/blog4.jpg",
-    "raatTime": "08 min read",
+    "readTime": "08 min read",
     "publishDate": "Mar 24 (06 Days ago)"
   }
 ]

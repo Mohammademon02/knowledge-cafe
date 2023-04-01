@@ -1,0 +1,48 @@
+
+
+
+.card-container{
+    padding: 3%;
+}
+
+.card-image{
+    width: 100%;
+}
+
+.user-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.user-info{
+    margin-left: 10px ;
+}
+.user-info h3{
+    font-size: 24px;
+    margin: 0;
+
+}
+
+.user-info p {
+    font-size: 16px;
+    color: rgba(17, 17, 17, 0.6);
+    margin: 0;
+}
+
+.user-container p{
+    font-size: 16px;
+    color: rgba(17, 17, 17, 0.6);
+    margin-top: 0;
+}
+
+.blog-title{
+    font-size: 30px;
+}
