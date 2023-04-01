@@ -1,0 +1,19 @@
+
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+
+/* .user-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-details{
+    display: flex;
+} */
